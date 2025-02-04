@@ -2,6 +2,7 @@ public class Prueba1 {
    public static void main(String[] args) {
     int[] a = {2,5,8,3,1,10,11};
     System.out.println(sumaParesImparesArreglo(a));
+    System.out.println(sumaExtremosArreglo(a));
    } 
    public static String sumaParesImparesArreglo(int[]a){
     int sumaPares =0,sumaImpares=0;
@@ -15,5 +16,20 @@ public class Prueba1 {
     }
     cad = "la suma de los numeros pares =" +sumaPares+ "suma de los numeros impares =" +sumaImpares;
     return cad;
+   }
+   public static String sumaExtremosArreglo(int[]a){
+    String cad ="";
+     //verificamos si el arreglo es par
+     if (a.length%2==0) {
+        //El arreglo es par
+        for(int i=0; i<a.length/2; i++){
+            cad += (a[i]+(a[a.length-1-i]))+" ";
+        }
+        
+     }else{
+        // el arreglo es impar
+        cad += "Arreglo impar";
+        return cad;
+     }
    }
 }
