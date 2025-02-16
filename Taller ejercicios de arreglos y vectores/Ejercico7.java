@@ -1,15 +1,17 @@
 public class Ejercico7 {
     public static void main(String[] args) {
-        int [] numeros = new int[10] ;
-        int [] pares = new int[10];
-        int [] inpares = new int[10];
+        int n = 10;
+        int [] pares = new int[n];
+        int [] inpares = new int[n];
 
-        for(int i=0; i<10; i++){
-            if(pares [i] % 2 == 0){
-                System.out.println(+ pares [i]);
-            }else{
-                System.out.println(+ inpares [i]);
-            }
+        int numPar = 2;
+        int numInpar = 2;
+
+        for(int i=0; i<n; i++){
+            pares [i] = numPar;
+            inpares [i] = numInpar;
+            numPar += 2;
+            numInpar += 2;
 
         }
     }
