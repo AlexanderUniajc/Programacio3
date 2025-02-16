@@ -20,9 +20,10 @@ public class Ejercicio3 {
             }else{
                 sumaInpares += numeros [i];
             }
-            System.out.println("La suma de los numeros pares es: " + sumaPares);
-            System.out.println("La suma de los numeros inpares es: " + sumaInpares); 
+            
         }
+            System.out.println("La suma de los numeros pares es: " + sumaPares);
+            System.out.println("La suma de los numeros inpares es: " + sumaInpares);
         }
 
     }
