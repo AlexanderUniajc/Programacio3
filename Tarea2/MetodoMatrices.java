@@ -1,24 +1,23 @@
-public class MetodoMatriz{
-    public static void main (String [] args){
-
+import java.util.Scanner;
+public class MetodoMatrices{
     Scanner sc = new Scanner (System.in);
     private int[][] matriz;
     private int filas;
     private int columnas;
 
-    public Matriz(int filas, int columnas) {
-        int filas = filas;
-        int columnas = columnas;
+    public Matriz (int  filas, int  columnas) {
+        this.filas = filas;
+        this.columnas = columnas;
         matriz = new int[filas][columnas];
     }
 
     public void llenarMatriz() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese los elementos de la matriz:");
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
                 System.out.print("Elemento [" + i + "][" + j + "]: ");
-                matriz[i][j] = scanner.nextInt();
+                matriz[i][j] = sc.nextInt();
             }
         }
     }
@@ -45,4 +44,4 @@ public class MetodoMatriz{
         }
     }
 }
-}
+
