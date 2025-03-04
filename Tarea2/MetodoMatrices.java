@@ -5,7 +5,7 @@ public class MetodoMatrices{
     private int filas;
     private int columnas;
 
-    public Matriz (int  filas, int  columnas) {
+    public MetodoMatrices (int  filas, int  columnas) {
         this.filas = filas;
         this.columnas = columnas;
         matriz = new int[filas][columnas];
