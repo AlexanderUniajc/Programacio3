@@ -3,7 +3,7 @@ import java.util.Scanner;
     public class Ejecutar {
     public static void main(String[] args) {
          
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
         /* 
         System.out.print("Por favor ingrese el número de filas: ");
         int filas = scanner.nextInt();
@@ -35,18 +35,24 @@ import java.util.Scanner;
         Matriz miMatriz = new Matriz(n, m);
         miMatriz.imprimir();
         */
-
-
-        
-
-       
-        Matriz miMatriz = new Matriz(10, 10);
-        miMatriz.imprimir1();
-
-        
+ 
+        Ejercicio20 obj = new Ejercicio20();
+ 
+        int[][] m = obj.llenarMatriz(10, 10);
+ 
+        System.out.println(obj.mostrarMatriz(m));
+ 
+        obj.diagonalCerosMatriz(m);
+ 
+        System.out.println(obj.mostrarMatriz(m));
+ 
+ 
+ 
     }
 }
-            
+
+        
+             
         
     
 
