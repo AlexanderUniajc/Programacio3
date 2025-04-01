@@ -32,6 +32,9 @@ public class EjecutarPila {
         System.out.println(nombres.pop()); //Daniel
         System.out.println(nombres); //[Pedro, Juan, Maria, Camila]
 
+        //Verificar el tamaño de la pila
+        System.out.println(nombres.size()); //4
+
     }
     
 }
