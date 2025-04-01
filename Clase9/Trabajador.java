@@ -1,4 +1,4 @@
-class Trabajador{
+public class Trabajador{
     private String cedula;
     private String nombre;
     private double salario;
@@ -9,7 +9,7 @@ class Trabajador{
         this.salario = salario;
 
 }
-    public String Pagar(){
+    public void Pagar(){
     
     
     }
