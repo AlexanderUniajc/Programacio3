@@ -1,6 +1,6 @@
 package Clase12;
 
-public class Ejecu {
+public class Ejecutar {
 
     public static void main(String[] args) {
         // Crear instancias de vehículos para cada tipo
